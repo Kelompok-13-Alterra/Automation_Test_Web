@@ -1,2 +1,7 @@
 Ini file main
+<<<<<<< HEAD
 123456
+=======
+test 1 2 3
+halo halo halo
+>>>>>>> adf95112fc83b4fa60ab331b93887a18aa2c0617
