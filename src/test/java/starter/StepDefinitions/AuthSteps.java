@@ -37,4 +37,9 @@ public class AuthSteps {
     @Then("I am on the dashboard page")
     public void iAmOnTheDashboardPage() { dashboard.openUrl("https://office-buddy-web.vercel.app/dashboard");
     }
+
+    @And("I can see error message")
+    public void iCanSeeErrorMessage() {
+
+    }
 }
