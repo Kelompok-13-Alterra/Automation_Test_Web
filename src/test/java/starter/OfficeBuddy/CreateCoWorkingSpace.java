@@ -11,7 +11,7 @@ public class CreateCoWorkingSpace extends PageObject {
     }
 
     private By ButtonCreateCoWorkingSpace() {
-        return By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[2]/div[2]/div[1]/div/button");
+        return By.xpath("//body/div[@id='root']/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/button[1]");
     }
 
     private By officeField() {
@@ -54,18 +54,8 @@ public class CreateCoWorkingSpace extends PageObject {
         return By.xpath("//body/div[@id='root']/div[2]/div[2]/div[3]/div[1]/div[1]/form[1]/div[7]/div[1]/div[1]/button[4]");
     }
 
-    private By PaymentBniVa() {
-        return By.xpath("//body/div[@id='root']/div[2]/div[2]/div[3]/div[1]/div[1]/form[1]/div[7]/div[2]/div[1]/button[1]");
-    }
-
     private By CreateCoWorkingSpaceButton() {
         return By.xpath("//button[contains(text(),'Tambah Co-working Space')]");
-    }
-    private By XButton() {
-        return By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[3]/div/div/div/button/svg");
-    }
-    private By YesButton() {
-        return By.xpath("//button[contains(text(),'Yes')]");
     }
 
     @Step
@@ -104,8 +94,6 @@ public class CreateCoWorkingSpace extends PageObject {
     @Step
     public void ClickFacilitiesWhiteboard(){ $(facilitiesWhiteboard()).click();}
     @Step
-    public void ClickPaymentBniVa(){ $(PaymentBniVa()).click();}
-    @Step
     public void inputDescription(String description){
         $(descriptionField()).type(description);
     }
@@ -117,12 +105,5 @@ public class CreateCoWorkingSpace extends PageObject {
     public void ClickCreateCoWorkingSpaceButton(){
         $(CreateCoWorkingSpaceButton()).click();
     }
-    @Step
-    public void ClickXButton(){
-        $(XButton()).click();
-    }
-    @Step
-    public void ClickYesButton(){
-        $(YesButton()).click();
-    }
+
 }

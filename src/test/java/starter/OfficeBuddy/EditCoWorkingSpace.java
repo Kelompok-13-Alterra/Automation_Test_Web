@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class EditCoWorkingSpace extends PageObject {
 
     private By EditButton(){
-        return By.xpath("//tbody/tr[2]/td[5]/div[1]/button[1]");
+        return By.xpath("//tbody/tr[5]/td[5]/div[1]/button[1]");
     }
     private By NameField(){ return By.xpath("//input[@id='officeName']");
     }
@@ -29,6 +29,9 @@ public class EditCoWorkingSpace extends PageObject {
     }
     private By YesButton(){
         return By.xpath("//button[contains(text(),'Yes')]");
+    }
+    private By BackButton(){
+        return By.xpath("//button[contains(text(),'Back')]");
     }
 
     @Step
@@ -80,5 +83,10 @@ public class EditCoWorkingSpace extends PageObject {
     @Step
     public void ClickYesButton(){
         $(YesButton()).click();
+    }
+
+    @Step
+    public void ClickBackButton(){
+        $(BackButton()).click();
     }
 }

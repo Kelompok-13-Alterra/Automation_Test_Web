@@ -18,6 +18,10 @@ public class EditCoWorkingSpaceSteps {
     public void iEnterName(String name) { editCoWorkingSpace.EnterName(name);
     }
 
+    @And("I enter name1 {string}")
+    public void iEnterName1(String name) { editCoWorkingSpace.EnterName(name);
+    }
+
     @And("I enter address {string}")
     public void iEnterAddress(String address) { editCoWorkingSpace.EnterAddress(address);
     }
@@ -38,8 +42,20 @@ public class EditCoWorkingSpaceSteps {
         editCoWorkingSpace.EnterPrice(price);
     }
 
+    @And("I enter price1 {string}")
+    public void iEnterPrice1(String price) {
+        price = String.format("280000");
+        editCoWorkingSpace.EnterPrice(price);
+    }
+
     @And("I enter open time {string}")
     public void iEnterOpen(String OpenTime) {
+        OpenTime = String.format("08:30:00");
+        editCoWorkingSpace.inputOpen(OpenTime);
+    }
+
+    @And("I enter open time1 {string}")
+    public void iEnterOpen1(String OpenTime) {
         OpenTime = String.format("08:30:00");
         editCoWorkingSpace.inputOpen(OpenTime);
     }
@@ -52,11 +68,20 @@ public class EditCoWorkingSpaceSteps {
     public void iClickYesButton() { editCoWorkingSpace.ClickYesButton();
     }
 
+    @And("I click back for no change data")
+    public void iClickBackButton() { editCoWorkingSpace.ClickBackButton();
+    }
+
     @And("I see notification successfully for change")
     public void iSeeNotificationSuccessfullyForChange() {
     }
 
     @And("I see massage error for change data")
     public void iSeeMassageErrorForChangeData() {
+    }
+
+    @And("I back on the edit co working page")
+    public void iBackOnTheEditCoWorkingPage() {
+        editCoWorkingSpace.openUrl("https://office-buddy-web.vercel.app/co-working");
     }
 }

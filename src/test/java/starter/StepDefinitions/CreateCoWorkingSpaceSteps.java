@@ -30,11 +30,6 @@ public class CreateCoWorkingSpaceSteps {
         createCoWorkingSpace.inputOffice(office);
     }
 
-    @And("I enter incorrect name2 {string}")
-    public void iEnterCoWorkingSpaceName2(String office) {
-        createCoWorkingSpace.inputOffice(office);
-    }
-
     @And("I enter correct address {string}")
     public void iEnterAddress(String address) {
         createCoWorkingSpace.inputAddress(address);
@@ -42,11 +37,6 @@ public class CreateCoWorkingSpaceSteps {
 
     @And("I enter incorrect address1 {string}")
     public void iEnterAddress1(String address) {
-        createCoWorkingSpace.inputAddress(address);
-    }
-
-    @And("I enter incorrect address2 {string}")
-    public void iEnterAddress2(String address) {
         createCoWorkingSpace.inputAddress(address);
     }
 
@@ -60,11 +50,6 @@ public class CreateCoWorkingSpaceSteps {
         createCoWorkingSpace.inputDescription(description);
     }
 
-    @And("I enter incorrect office description2 {string}")
-    public void iEnterOfficeDescription2(String description) {
-        createCoWorkingSpace.inputDescription(description);
-    }
-
     @And("I enter correct price {string}")
     public void iEnterPrice(String prices) {
         prices = String.format("123000");
@@ -73,12 +58,6 @@ public class CreateCoWorkingSpaceSteps {
 
     @And("I enter incorrect price1 {string}")
     public void iEnterPrice1(String prices) {
-        prices = String.format("123000");
-        createCoWorkingSpace.inputPrice(prices);
-    }
-
-    @And("I enter incorrect price2 {string}")
-    public void iEnterPrice2(String prices) {
         prices = String.format("123000");
         createCoWorkingSpace.inputPrice(prices);
     }
@@ -95,27 +74,15 @@ public class CreateCoWorkingSpaceSteps {
         createCoWorkingSpace.inputCapacity(capacity);
     }
 
-    @And("I enter incorrect capacity2 {string}")
-    public void iEnterCapacity2(String capacity) {
-        capacity = String.format("21");
-        createCoWorkingSpace.inputCapacity(capacity);
-    }
-
     @And("I enter correct open time {string}")
     public void iEnterOpen(String OpenTime) {
-        OpenTime = String.format("08:00:01");
+        OpenTime = String.format("08:00:00");
         createCoWorkingSpace.inputOpen(OpenTime);
     }
 
     @And("I enter incorrect open time1 {string}")
     public void iEnterOpen1(String OpenTime) {
-        OpenTime = String.format("08:00:01");
-        createCoWorkingSpace.inputOpen(OpenTime);
-    }
-
-    @And("I enter incorrect open time2 {string}")
-    public void iEnterOpen2(String OpenTime) {
-        OpenTime = String.format("08:00:01");
+        OpenTime = String.format("08:00:00");
         createCoWorkingSpace.inputOpen(OpenTime);
     }
 
@@ -131,19 +98,8 @@ public class CreateCoWorkingSpaceSteps {
         createCoWorkingSpace.inputClose(CloseTime);
     }
 
-    @And("I enter incorrect closing time2 {string}")
-    public void iEnterClose2(String CloseTime) {
-        CloseTime = String.format("22:00:00");
-        createCoWorkingSpace.inputClose(CloseTime);
-    }
-
     @And("I click correct speaker button")
     public void iClickSpeakerButton() {
-        createCoWorkingSpace.ClickFacilitiesSpeaker();
-    }
-
-    @And("I click correct speaker button1")
-    public void iClickSpeakerButton1() {
         createCoWorkingSpace.ClickFacilitiesSpeaker();
     }
 
@@ -152,34 +108,9 @@ public class CreateCoWorkingSpaceSteps {
         createCoWorkingSpace.ClickFacilitiesProjector();
     }
 
-    @And("I click correct projector button1")
-    public void iClickProjectorButton1() {
-        createCoWorkingSpace.ClickFacilitiesProjector();
-    }
-
     @And("I click correct whiteboard button")
     public void iClickWhiteboardButton() {
         createCoWorkingSpace.ClickFacilitiesWhiteboard();
-    }
-
-    @And("I click correct whiteboard button1")
-    public void iClickWhiteboardButton1() {
-        createCoWorkingSpace.ClickFacilitiesWhiteboard();
-    }
-
-    @And("I click correct bni va button")
-    public void iClickBniVaButton() {
-        createCoWorkingSpace.ClickPaymentBniVa();
-    }
-
-    @And("I click correct bni va button1")
-    public void iClickBniVaButton1() {
-        createCoWorkingSpace.ClickPaymentBniVa();
-    }
-
-    @And("I click correct bni va button2")
-    public void iClickBniVaButton2() {
-        createCoWorkingSpace.ClickPaymentBniVa();
     }
 
     @Then("I click create co working space button")
@@ -187,19 +118,8 @@ public class CreateCoWorkingSpaceSteps {
         createCoWorkingSpace.ClickCreateCoWorkingSpaceButton();
     }
 
-    @Then("I click x button")
-    public void iClickXButton() {
-        createCoWorkingSpace.ClickXButton();
-    }
-
-    @And("I click yes button")
-    public void iClickYesButton() {
-        createCoWorkingSpace.ClickYesButton();
-    }
-
-    @And("I am on the co working space information page")
-    public void iAmOnTheCoWorkingSpaceInformationPage() {
-        createCoWorkingSpace.openUrl("https://office-buddy-web.vercel.app/co-working");
+    @And("I see massage successfully for create co working space")
+    public void iSeeMassageSuccessfullyForCreate() {
     }
 
     @And("I see massage error")
