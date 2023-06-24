@@ -33,10 +33,12 @@ public class EditOffice extends PageObject {
 
     @Step
     public void inputUpdateDescriptions(String descriptions){
+        $(descriptionOfficeField()).clear();
         $(descriptionOfficeField()).type(descriptions);
     }
     @Step
     public void inputUpdatePrices(String prices){
+        $(priceOfficeField()).clear();
         $(priceOfficeField()).type(prices);
     }
     @Step

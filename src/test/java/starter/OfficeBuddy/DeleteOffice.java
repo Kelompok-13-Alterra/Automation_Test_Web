@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 public class DeleteOffice extends PageObject {
     private By ButtonDeleteOffice(){
-        return By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[4]/td[5]/div/button[2]/span");
+        return By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[2]/td[5]/div/button[2]/span");
     }
     private By BackDeleteButton(){
         return By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[3]/div/div[2]/button[1]");
