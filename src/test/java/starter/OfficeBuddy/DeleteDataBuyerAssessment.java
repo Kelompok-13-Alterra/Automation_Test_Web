@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 public class DeleteDataBuyerAssessment extends PageObject {
 
-    private By Delete(){return By.xpath("//tbody/tr[4]/td[5]/div[1]/button[2]");}
+    private By Delete(){return By.xpath("//tbody/tr[3]/td[5]/div[1]/button[2]");}
     private By Yes(){
         return By.xpath("//button[contains(text(),'Yes')]");
     }

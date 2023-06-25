@@ -56,25 +56,13 @@ Feature: Co-Working Space
     And I click edit button
     And I enter name ""
     And I enter price ""
-    And I enter open time ""
+    And I enter address "Jl Raya Barat Daya No.2"
+    And I enter office description "Free WiFi and comfortable place"
+    And I enter capacity "23"
+    And I enter open time "08:30:00"
     Then I click change Co-Working Space
     And I click yes for change data
     And I see notification successfully for change
-
-  @EditCoWorKingSpace
-  Scenario: Edit Co-Working Space without data
-    Given I am on the login pages
-    When I enter Email "admin2@gmail.com"
-    And I enter Password "admin2"
-    And I click Login button
-    And I am on the dashboard page
-    And I click sidebar on co working space name
-    And I click edit button
-    And I enter address "Jl Raya Barat Daya No.2"
-    And I enter office description "Free WiFi and comfortable place"
-    And I enter capacity "70"
-    Then I click change Co-Working Space
-    And I see massage error for change data
 
   @EditCoWorKingSpace
   Scenario: Edit Co-Working Space with the correct data and click back

@@ -7,13 +7,13 @@ import org.openqa.selenium.By;
 public class EditDataUserInDatabaseUser extends PageObject {
 
     private By SidebarDatabaseUserName(){
-        return By.xpath("//span[contains(text(),'Database User')]");
+        return By.xpath("//body/div[@id='root']/div[2]/div[1]/a[4]/ul[1]");
     }
     private By SeeAllButton(){
         return By.xpath("//body/div[@id='root']/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/a[1]");
     }
     private By ButtonChange(){
-        return By.xpath("//tbody/tr[6]/td[5]/div[1]/button[1]");
+        return By.xpath("//tbody/tr[8]/td[5]/div[1]/button[1]");
     }
     private By UsernameField(){
         return By.xpath("//input[@id='name']");

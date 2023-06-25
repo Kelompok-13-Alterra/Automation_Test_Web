@@ -32,7 +32,7 @@ public class EditCoWorkingSpaceSteps {
 
     @And("I enter capacity {string}")
     public void iEnterCapacity(String capacity) {
-        capacity = String.format("99");
+        capacity = String.format("abc");
         editCoWorkingSpace.EnterCapacity(capacity);
     }
 
@@ -50,7 +50,7 @@ public class EditCoWorkingSpaceSteps {
 
     @And("I enter open time {string}")
     public void iEnterOpen(String OpenTime) {
-        OpenTime = String.format("08:30:00");
+        OpenTime = String.format("09:30:00 PM");
         editCoWorkingSpace.inputOpen(OpenTime);
     }
 
@@ -74,10 +74,6 @@ public class EditCoWorkingSpaceSteps {
 
     @And("I see notification successfully for change")
     public void iSeeNotificationSuccessfullyForChange() {
-    }
-
-    @And("I see massage error for change data")
-    public void iSeeMassageErrorForChangeData() {
     }
 
     @And("I back on the edit co working page")

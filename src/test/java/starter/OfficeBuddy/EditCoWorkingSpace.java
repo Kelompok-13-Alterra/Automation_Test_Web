@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class EditCoWorkingSpace extends PageObject {
 
     private By EditButton(){
-        return By.xpath("//tbody/tr[5]/td[5]/div[1]/button[1]");
+        return By.xpath("//tbody/tr[4]/td[5]/div[1]/button[1]");
     }
     private By NameField(){ return By.xpath("//input[@id='officeName']");
     }
@@ -64,13 +64,13 @@ public class EditCoWorkingSpace extends PageObject {
     }
 
     @Step
-    public void inputOpen(String capacity){
+    public void EnterCapacity(String capacity){
         $(CapacityField()).clear();
         $(CapacityField()).type(capacity);
     }
 
     @Step
-    public void EnterCapacity(String OpenTime){
+    public void inputOpen(String OpenTime){
         $(OpenTimeField()).clear();
         $(OpenTimeField()).type(OpenTime);
     }
