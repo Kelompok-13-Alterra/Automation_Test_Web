@@ -3,8 +3,8 @@ Feature: Office
   @CreateOffice
   Scenario: As admin I can create office
     Given I am on the login pages
-    When I enter Email "admin2@gmail.com"
-    And I enter Password "admin2"
+    When I enter Email "admin3@gmail.com"
+    And I enter Password "admin3"
     And I click Login button
     And I am on the dashboard page
     And I click sidebar on office name
@@ -20,11 +20,24 @@ Feature: Office
     Then I click create office button
     And I am on the office information page
 
+    @CreateOffice
+      Scenario: As admin can adding office data with empty data
+      Given I am on the login pages
+      When I enter Email "admin3@gmail.com"
+      And I enter Password "admin3"
+      And I click Login button
+      And I am on the dashboard page
+      And I click sidebar on office name
+      And I click button create office
+      Then I click create office button
+      And I can see error message
+
+
     @EditOffice
     Scenario: As admin I can edit office
       Given I am on the login pages
-      When I enter Email "admin2@gmail.com"
-      When I enter Password "admin2"
+      When I enter Email "admin3@gmail.com"
+      When I enter Password "admin3"
       And I click Login button
       And I am on the dashboard page
       And I click sidebar on office name
@@ -38,8 +51,8 @@ Feature: Office
   @EditOffice
   Scenario: As admin I can cancel edit office
     Given I am on the login pages
-    When I enter Email "admin2@gmail.com"
-    When I enter Password "admin2"
+    When I enter Email "admin3@gmail.com"
+    When I enter Password "admin3"
     And I click Login button
     And I am on the dashboard page
     And I click sidebar on office name
@@ -54,8 +67,8 @@ Feature: Office
     @DeleteOffice
     Scenario: As admin I can delete office
       Given I am on the login pages
-      When I enter Email "admin2@gmail.com"
-      When I enter Password "admin2"
+      When I enter Email "admin3@gmail.com"
+      When I enter Password "admin3"
       And I click Login button
       And I am on the dashboard page
       And I click sidebar on office name
@@ -65,8 +78,8 @@ Feature: Office
 
       Scenario: As admin I cancel delete office
         Given I am on the login pages
-        When I enter Email "admin2@gmail.com"
-        When I enter Password "admin2"
+        When I enter Email "admin3@gmail.com"
+        When I enter Password "admin3"
         And I click Login button
         And I am on the dashboard page
         And I click sidebar on office name

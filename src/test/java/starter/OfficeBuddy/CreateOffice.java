@@ -35,7 +35,7 @@ public class CreateOffice extends PageObject {
         return By.xpath("//*[@id=\"closeTime\"]");
     }
     private By facilitiesField(){
-        return By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[3]/div/div/form/div[7]/div[1]/div");
+        return By.xpath("//*[@id=\"root\"]/div[2]/div[2]/div[3]/div/div/form/div[7]/div[1]/div/button[3]/span");
     }
 
     private By CreateOfficeButton(){
